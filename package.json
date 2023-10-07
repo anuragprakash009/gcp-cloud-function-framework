@@ -10,7 +10,7 @@
         "lint-check": "eslint .",
         "lint-fix": "eslint --fix ./*.js",
         "pretest": "npx prettier --write . && ./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
-      },
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -31,7 +31,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run pretest"
+            "pre-commit": "npm run lint-check"
         }
     }
 }
