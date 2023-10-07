@@ -5,7 +5,7 @@ const { Logger } = require('../utils');
 async function startApp(app, express) {
     await databaseConnection();
     Logger.info('startApp', 'Connected to database successfully');
-    await expressLoader(app);
+    await expressLoader();
     Logger.info('startApp', 'Function loaded successfully');
 }
 
