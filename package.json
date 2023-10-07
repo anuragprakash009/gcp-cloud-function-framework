@@ -1,0 +1,30 @@
+{
+    "name": "google-cloud-function",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "functions-framework --target=patientManagementSystem --port=7071 --source=app.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "npx prettier --write .",
+        "lint-check": "eslint .",
+        "lint-fix": "eslint --fix ./*.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "http-errors": "^2.0.0"
+    },
+    "devDependencies": {
+        "@google-cloud/functions-framework": "^3.3.0",
+        "eslint": "^8.51.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-n": "^16.1.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "npm": "^10.2.0",
+        "prettier": "^3.0.3"
+    }
+}

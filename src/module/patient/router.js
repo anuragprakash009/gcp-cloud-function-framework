@@ -1,0 +1,8 @@
+const { getpatients } = require('./controller');
+
+const express = require('express');
+const router = express.Router();
+
+router.get('/', getpatients);
+
+module.exports = router;

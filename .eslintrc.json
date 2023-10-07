@@ -1,0 +1,31 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "standard",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "semi": [2, "always"],
+        "indent": ["error", 4],
+        "no-unused-vars": [
+            "error",
+            {
+                "ignoreRestSiblings": true,
+                "destructuredArrayIgnorePattern": "[A-Z]",
+                "caughtErrors": "none"
+            }
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "ignore",
+                "named": "ignore",
+                "asyncArrow": "ignore"
+            }
+        ]
+    }
+}
