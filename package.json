@@ -9,7 +9,8 @@
         "format": "npx prettier --write .",
         "lint-check": "eslint .",
         "lint-fix": "eslint --fix ./*.js",
-        "pretest": "npx prettier --write . && ./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
+        "pretest": "npx prettier --write . && ./node_modules/.bin/eslint --ignore-path .gitignore . --fix",
+        "prepare": "husky install"
     },
     "keywords": [],
     "author": "",
@@ -28,10 +29,5 @@
         "husky": "^8.0.3",
         "npm": "^10.2.0",
         "prettier": "^3.0.3"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint-check"
-        }
     }
 }
