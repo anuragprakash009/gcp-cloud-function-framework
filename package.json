@@ -8,8 +8,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "npx prettier --write .",
         "lint-check": "eslint .",
-        "lint-fix": "eslint --fix ./*.js"
-    },
+        "lint-fix": "eslint --fix ./*.js",
+        "pretest": "npx prettier --write . && ./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
+      },
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -30,7 +31,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npx prettier --write .&&eslint ."
+            "pre-commit": "npm run pretest"
         }
     }
 }
